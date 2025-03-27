@@ -42,6 +42,16 @@
                 <span>Inventaris</span>
             </a>
         </div>
+
+        <!-- Stok -->
+        <div class="space-y-1 px-4 rounded mb-2">
+            <a href="{{ route('stok') }}"
+                class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors
+                {{ request()->routeIs('stok') ? 'bg-gray-900 text-gray-100' : 'text-gray-400 hover:bg-gray-700' }}">
+                <i data-feather="layers"></i>
+                <span>Stok Material</span>
+            </a>
+        </div>
     </nav>
 </aside>
 
