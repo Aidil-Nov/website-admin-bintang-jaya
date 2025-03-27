@@ -35,4 +35,11 @@ Route::prefix('/')->group(function () {
             return view('keuangan.laporan'); // Asumsi laporan ada di views/keuangan/laporan/
         })->name('laporan');
     });
+
+    // Stok
+    Route::prefix('stok')->group(function () {
+        Route::get('/', function () {
+            return view('stok.stok'); // Asumsi stok ada di views/stok/stok/
+        })->name('stok');
+    });
 });
