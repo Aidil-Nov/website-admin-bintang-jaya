@@ -32,7 +32,7 @@ Route::prefix('/')->group(function () {
     // Laporan
     Route::prefix('laporan')->group(function () {
         Route::get('/', function () {
-            return view('keuangan.laporan'); // Asumsi laporan ada di views/keuangan/laporan/
+            return view('keuangan.laporan.index'); // Asumsi laporan ada di views/keuangan/laporan/
         })->name('laporan');
     });
 
